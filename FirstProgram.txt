@@ -1,0 +1,16 @@
+public class FirstProgram
+{
+	public static void main(String{} args)
+	{
+		System.out.println("Console: " +
+				"\nstudentId: 2413111226" +
+				"\nstudentName: Pannatlert Phetarphon" +
+				"\nTopic: gitHub" +
+				"\nDate: 11/20/2024" );
+		JOptionPane.showMessageDialog(null,
+					"\nstudentId: 2413111226" +
+					"\nstudentName: Pannatlert Phetarphon" +
+					"\nTopic: gitHub" +
+					"\nDate: 11/20/2024" );
+	}
+}
