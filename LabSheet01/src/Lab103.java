@@ -3,27 +3,24 @@ import java.util.*;
 import javax.swing.JOptionPane;
 
 import java.text.*;
-
+import java.text.DecimalFormat;
+import java.text.DecimalFormat;
 public class Lab103 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		DecimalFormat frm = new DecimalFormat("#,###.00");
 
-		String strTimeparking = JOptionPane.showInputDialog("Input Time parking (minute): ");
-		double timeparking = Integer.parseInt(strTimeparking);
-		double productprice = Double.parseDouble(JOptionPane.showInputDialog("Input Price per unit : "));
+		int timeparking = Integer.parseInt(JOptionPane.showInputDialog("Input Time parking (minute): "));
 		
-		double hour = timeparking / 60;
-		String frmhour= String.format("%,.2f",hour);
-		double min = timeparking % 60;
-		String frmmin = String.format("%,.2f",min);
-		
-		int pricehour = hour * 50;
-		int pricemin = min * 25;
+		int hour = timeparking / 60;
+		int min = timeparking % 60;
 
-		JOptionPane.showConfirmDialog(null, "Total price is "+frm.format(totalpriceProduct)+" baht."
-											+ "\nAdd Vat 7% is "+frm.format(totalplusVat)+" baht.");
+		
+		double price= (hour * 50)+(min * 0.25);
+
+		String message = String.format("Your Parking %d Hour "" Minute."
+											+ "\nAmount to be paid is "" baht.");
 
 
 	}
