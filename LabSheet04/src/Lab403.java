@@ -15,7 +15,7 @@ public class Lab403 {
 		//System.out.println(firstname);
 
 		
-		System.out.println(abbreviatName(Fullname));
+		System.out.println(abbreviatName(Fullname)+firstname);
 
 		input.close();
 	}
@@ -29,7 +29,7 @@ public class Lab403 {
 			if(fname.charAt(i)==' ')
 			{
 				initailLetter = (initailLetter+fname.charAt(i+1)).toUpperCase();
-				
+				initailLetter = initailLetter+".";
 			}
 			
 		}//end for
