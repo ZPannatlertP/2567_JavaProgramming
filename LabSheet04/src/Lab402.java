@@ -29,7 +29,7 @@ public  static boolean isLeapYear (int _year) {
 }
 
 public static boolean checkYear(int _year) {
-	if (_year>=1000&&_year<=3000) {
+	if (_year<=3000&&_year>=1000) {
 		return true;
 	}
 	else {
