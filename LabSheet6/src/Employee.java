@@ -28,8 +28,6 @@ public class Employee {
 		System.out.println("hourRate : "+hourRate);
 		
 		System.out.println("Total salary : "+calculateSalary());
-
-		
 	}
 	
 	
