@@ -8,11 +8,12 @@ public class StockProduct {
             pid[i] = new Product();
             System.out.print("Input product Id    :");
             pid[i].setId(scan.nextLine());
+            
             System.out.print("Input product Unit  : ");
-            int proUnit = scan.nextInt();
+            proUnit[i].setUnit(scan.nextInt());
             scan.nextLine();
             System.out.print("Input product Price : ");
-            Double proPrice = scan.nextDouble();
+            proPrice = scan.nextDouble();
             scan.nextLine();
             System.out.println();
 
